@@ -1,13 +1,24 @@
 import Image from "next/image";
-import { BarChartIcon, LineChartIcon, PieChartIcon } from "@/components/ui/icons";
+import { Database, Code, Sigma, BrainCircuit, Bot, LineChart, Cpu, Network } from "lucide-react";
+
+const icons = [
+  { icon: Database, className: "top-1/4 left-1/4 w-12 h-12 animation-delay-0" },
+  { icon: Code, className: "top-1/2 left-1/3 w-16 h-16 animation-delay-1000" },
+  { icon: Sigma, className: "top-1/3 right-1/4 w-8 h-8 animation-delay-2000" },
+  { icon: BrainCircuit, className: "bottom-1/4 left-1/2 w-14 h-14 animation-delay-3000" },
+  { icon: Bot, className: "top-10 right-10 w-12 h-12 animation-delay-4000" },
+  { icon: LineChart, className: "bottom-10 left-10 w-16 h-16 animation-delay-5000" },
+  { icon: Cpu, className: "bottom-1/3 right-1/3 w-10 h-10 animation-delay-6000" },
+  { icon: Network, className: "top-10 left-1/2 w-12 h-12 animation-delay-7000" },
+];
 
 export function Landing() {
   return (
     <section id="landing" className="relative flex items-center min-h-[calc(100vh-10rem)] overflow-hidden">
       <div className="absolute inset-0 z-0">
-          <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary rounded-full opacity-20 animate-blob" />
-          <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent rounded-full opacity-20 animate-blob animation-delay-2000" />
-          <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-secondary rounded-full opacity-10 animate-blob animation-delay-4000" />
+        {icons.map(({ icon: Icon, className }, index) => (
+          <Icon key={index} className={`absolute text-primary/10 animate-blob ${className}`} />
+        ))}
       </div>
 
       <div className="container z-10 flex flex-col md:flex-row items-center gap-12">
