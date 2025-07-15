@@ -4,6 +4,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion";
+  import { cn } from "@/lib/utils";
   
   const experienceData = [
     {
@@ -53,15 +54,30 @@ import {
               {experienceData.map((job, index) => (
                 <div key={job.id} className="relative">
                   <div className="absolute left-4 md:left-1/2 top-4 h-4 w-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2"></div>
-                  <div className="md:ml-[50%] md:pl-8">
-                    <AccordionItem value={job.id} className="border-none">
-                      <AccordionTrigger className="w-full text-left p-4 rounded-lg bg-card hover:bg-muted/50 transition-colors">
-                        <div className="flex flex-col">
+                  <div className={cn(
+                    "ml-10 md:ml-0",
+                    index % 2 === 0 ? "md:pr-8 md:text-right" : "md:ml-[50%] md:pl-8"
+                  )}>
+                    <AccordionItem value={job.id} className={cn(
+                        "border-none",
+                        index % 2 === 0 ? "md:w-[calc(50%-1rem)]" : "md:w-auto"
+                    )}>
+                      <AccordionTrigger className={cn(
+                        "w-full p-4 rounded-lg bg-card hover:bg-muted/50 transition-colors",
+                        index % 2 === 0 ? "text-right flex-row-reverse" : "text-left"
+                      )}>
+                        <div className={cn(
+                            "flex flex-col",
+                            index % 2 === 0 ? "md:text-right items-end" : "md:text-left items-start"
+                        )}>
                             <h3 className="font-semibold text-lg">{job.role}</h3>
                             <p className="text-muted-foreground">{job.company} | {job.period}</p>
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className="p-4 mt-2 rounded-lg bg-card/50">
+                      <AccordionContent className={cn(
+                          "p-4 mt-2 rounded-lg bg-card/50",
+                           index % 2 === 0 ? "text-left" : "text-left"
+                        )}>
                         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                           {job.description.map((point, i) => (
                             <li key={i}>{point}</li>
@@ -78,4 +94,3 @@ import {
       </section>
     );
   }
-  
