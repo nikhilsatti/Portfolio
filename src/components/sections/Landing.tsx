@@ -2,18 +2,18 @@ import Image from "next/image";
 import { Database, Code, Sigma, BrainCircuit, Bot, LineChart, Cpu, Network, FileCode, GitBranch, TerminalSquare, Server } from "lucide-react";
 
 const icons = [
-  { icon: Database, className: "top-1/4 left-1/4 w-12 h-12 text-primary/10 animate-blob-1" },
-  { icon: Code, className: "top-1/2 left-1/3 w-16 h-16 text-accent/10 animate-blob-2" },
-  { icon: Sigma, className: "top-1/3 right-1/4 w-8 h-8 text-secondary/20 animate-blob-3" },
-  { icon: BrainCircuit, className: "bottom-1/4 left-1/2 w-14 h-14 text-muted/20 animate-blob-4" },
-  { icon: Bot, className: "top-10 right-10 w-12 h-12 text-accent/15 animate-blob-5" },
-  { icon: LineChart, className: "bottom-10 left-10 w-16 h-16 text-primary/20 animate-blob-1" },
-  { icon: Cpu, className: "bottom-1/3 right-1/3 w-10 h-10 text-secondary/10 animate-blob-2" },
-  { icon: Network, className: "top-10 left-1/2 w-12 h-12 text-muted/10 animate-blob-3" },
-  { icon: FileCode, className: "bottom-1/2 right-1/2 w-12 h-12 text-primary/15 animate-blob-6" },
-  { icon: GitBranch, className: "top-3/4 left-1/3 w-14 h-14 text-accent/15 animate-blob-7" },
-  { icon: TerminalSquare, className: "bottom-1/4 right-1/4 w-10 h-10 text-secondary/15 animate-blob-8" },
-  { icon: Server, className: "top-1/3 left-10 w-16 h-16 text-muted/15 animate-blob-9" },
+  { icon: Database, className: "top-1/4 left-1/4 w-16 h-16 text-muted-foreground/10 animate-blob-1" },
+  { icon: Code, className: "top-1/2 left-1/3 w-20 h-20 text-accent/10 animate-blob-2" },
+  { icon: Sigma, className: "top-1/3 right-1/4 w-12 h-12 text-foreground/10 animate-blob-3" },
+  { icon: BrainCircuit, className: "bottom-1/4 left-1/2 w-16 h-16 text-muted-foreground/20 animate-blob-4" },
+  { icon: Bot, className: "top-10 right-10 w-14 h-14 text-accent/15 animate-blob-5" },
+  { icon: LineChart, className: "bottom-10 left-10 w-20 h-20 text-foreground/20 animate-blob-1" },
+  { icon: Cpu, className: "bottom-1/3 right-1/3 w-14 h-14 text-muted-foreground/10 animate-blob-2" },
+  { icon: Network, className: "top-10 left-1/2 w-16 h-16 text-muted-foreground/10 animate-blob-3" },
+  { icon: FileCode, className: "bottom-1/2 right-1/2 w-14 h-14 text-foreground/15 animate-blob-6" },
+  { icon: GitBranch, className: "top-3/4 left-1/3 w-16 h-16 text-accent/15 animate-blob-7" },
+  { icon: TerminalSquare, className: "bottom-1/4 right-1/4 w-12 h-12 text-muted-foreground/15 animate-blob-8" },
+  { icon: Server, className: "top-1/3 left-10 w-20 h-20 text-foreground/15 animate-blob-9" },
 ];
 
 export function Landing() {

@@ -72,71 +72,71 @@ const config = {
         },
         "blob-1": {
           "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-          "25%": { transform: "translate(40px, -60px) scale(1.1)" },
-          "50%": { transform: "translate(-30px, 30px) scale(0.9)" },
-          "75%": { transform: "translate(20px, -20px) scale(1.05)" }
+          "25%": { transform: "translate(80px, -120px) scale(1.2)" },
+          "50%": { transform: "translate(-60px, 60px) scale(0.8)" },
+          "75%": { transform: "translate(40px, -40px) scale(1.1)" }
         },
         "blob-2": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(-50px, 20px) scale(1.15)" },
-            "50%": { transform: "translate(40px, -30px) scale(0.95)" },
-            "75%": { transform: "translate(-20px, 50px) scale(1.0)" }
+            "25%": { transform: "translate(-100px, 40px) scale(1.3)" },
+            "50%": { transform: "translate(80px, -60px) scale(0.7)" },
+            "75%": { transform: "translate(-40px, 100px) scale(1.0)" }
         },
         "blob-3": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(60px, 10px) scale(0.85)" },
-            "50%": { transform: "translate(-20px, -50px) scale(1.1)" },
-            "75%": { transform: "translate(30px, 30px) scale(0.9)" }
+            "25%": { transform: "translate(120px, 20px) scale(0.8)" },
+            "50%": { transform: "translate(-40px, -100px) scale(1.2)" },
+            "75%": { transform: "translate(60px, 60px) scale(0.9)" }
         },
         "blob-4": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(-30px, -40px) scale(1.05)" },
-            "50%": { transform: "translate(50px, 50px) scale(0.95)" },
-            "75%": { transform: "translate(-40px, 20px) scale(1.1)" }
+            "25%": { transform: "translate(-60px, -80px) scale(1.1)" },
+            "50%": { transform: "translate(100px, 100px) scale(0.9)" },
+            "75%": { transform: "translate(-80px, 40px) scale(1.2)" }
         },
         "blob-5": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(20px, 70px) scale(1.2)" },
-            "50%": { transform: "translate(-50px, -10px) scale(0.8)" },
-            "75%": { transform: "translate(10px, -40px) scale(1.0)" }
+            "25%": { transform: "translate(40px, 140px) scale(1.4)" },
+            "50%": { transform: "translate(-100px, -20px) scale(0.6)" },
+            "75%": { transform: "translate(20px, -80px) scale(1.0)" }
         },
         "blob-6": {
           "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-          "25%": { transform: "translate(-80px, 10px) scale(1.1)" },
-          "50%": { transform: "translate(10px, -80px) scale(0.9)" },
-          "75%": { transform: "translate(-10px, 40px) scale(1.0)" }
+          "25%": { transform: "translate(-160px, 20px) scale(1.2)" },
+          "50%": { transform: "translate(20px, -160px) scale(0.8)" },
+          "75%": { transform: "translate(-20px, 80px) scale(1.0)" }
         },
         "blob-7": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(70px, -30px) scale(0.95)" },
-            "50%": { transform: "translate(-30px, 70px) scale(1.15)" },
-            "75%": { transform: "translate(50px, -10px) scale(1.0)" }
+            "25%": { transform: "translate(140px, -60px) scale(0.9)" },
+            "50%": { transform: "translate(-60px, 140px) scale(1.3)" },
+            "75%": { transform: "translate(100px, -20px) scale(1.0)" }
         },
         "blob-8": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(-10px, 90px) scale(0.8)" },
-            "50%": { transform: "translate(90px, -10px) scale(1.2)" },
-            "75%": { transform: "translate(-40px, -40px) scale(0.9)" }
+            "25%": { transform: "translate(-20px, 180px) scale(0.7)" },
+            "50%": { transform: "translate(180px, -20px) scale(1.4)" },
+            "75%": { transform: "translate(-80px, -80px) scale(0.9)" }
         },
         "blob-9": {
             "0%, 100%": { transform: "translate(0, 0) scale(1)" },
-            "25%": { transform: "translate(50px, -50px) scale(1.1)" },
-            "50%": { transform: "translate(-50px, 50px) scale(0.9)" },
-            "75%": { transform: "translate(30px, -30px) scale(1.05)" }
+            "25%": { transform: "translate(100px, -100px) scale(1.2)" },
+            "50%": { transform: "translate(-100px, 100px) scale(0.8)" },
+            "75%": { transform: "translate(60px, -60px) scale(1.1)" }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        "blob-1": "blob-1 10s infinite ease-in-out",
-        "blob-2": "blob-2 12s infinite ease-in-out",
-        "blob-3": "blob-3 15s infinite ease-in-out",
-        "blob-4": "blob-4 9s infinite ease-in-out",
-        "blob-5": "blob-5 13s infinite ease-in-out",
-        "blob-6": "blob-6 11s infinite ease-in-out",
-        "blob-7": "blob-7 14s infinite ease-in-out",
-        "blob-8": "blob-8 16s infinite ease-in-out",
-        "blob-9": "blob-9 10s infinite ease-in-out"
+        "blob-1": "blob-1 15s infinite ease-in-out",
+        "blob-2": "blob-2 18s infinite ease-in-out",
+        "blob-3": "blob-3 22s infinite ease-in-out",
+        "blob-4": "blob-4 14s infinite ease-in-out",
+        "blob-5": "blob-5 20s infinite ease-in-out",
+        "blob-6": "blob-6 17s infinite ease-in-out",
+        "blob-7": "blob-7 21s infinite ease-in-out",
+        "blob-8": "blob-8 24s infinite ease-in-out",
+        "blob-9": "blob-9 16s infinite ease-in-out"
       },
     },
   },
