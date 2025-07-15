@@ -99,6 +99,30 @@ const config = {
             "25%": { transform: "translate(20px, 70px) scale(1.2)" },
             "50%": { transform: "translate(-50px, -10px) scale(0.8)" },
             "75%": { transform: "translate(10px, -40px) scale(1.0)" }
+        },
+        "blob-6": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "25%": { transform: "translate(-80px, 10px) scale(1.1)" },
+          "50%": { transform: "translate(10px, -80px) scale(0.9)" },
+          "75%": { transform: "translate(-10px, 40px) scale(1.0)" }
+        },
+        "blob-7": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(70px, -30px) scale(0.95)" },
+            "50%": { transform: "translate(-30px, 70px) scale(1.15)" },
+            "75%": { transform: "translate(50px, -10px) scale(1.0)" }
+        },
+        "blob-8": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(-10px, 90px) scale(0.8)" },
+            "50%": { transform: "translate(90px, -10px) scale(1.2)" },
+            "75%": { transform: "translate(-40px, -40px) scale(0.9)" }
+        },
+        "blob-9": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(50px, -50px) scale(1.1)" },
+            "50%": { transform: "translate(-50px, 50px) scale(0.9)" },
+            "75%": { transform: "translate(30px, -30px) scale(1.05)" }
         }
       },
       animation: {
@@ -108,7 +132,11 @@ const config = {
         "blob-2": "blob-2 12s infinite ease-in-out",
         "blob-3": "blob-3 15s infinite ease-in-out",
         "blob-4": "blob-4 9s infinite ease-in-out",
-        "blob-5": "blob-5 13s infinite ease-in-out"
+        "blob-5": "blob-5 13s infinite ease-in-out",
+        "blob-6": "blob-6 11s infinite ease-in-out",
+        "blob-7": "blob-7 14s infinite ease-in-out",
+        "blob-8": "blob-8 16s infinite ease-in-out",
+        "blob-9": "blob-9 10s infinite ease-in-out"
       },
     },
   },
