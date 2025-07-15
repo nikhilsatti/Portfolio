@@ -8,7 +8,7 @@ import {
   
   const experienceData = [
     {
-      id: "exp3",
+      id: "exp4",
       role: "Data Analyst",
       company: "Holiday World",
       period: "Jul 2024 - Present",
@@ -16,6 +16,17 @@ import {
         "Boosted organic traffic and ad revenue by 35% through Google Analytics, AdTech integration, and SEO (meta-tagging, sitemaps).",
         "Doubled weekly website signups by deploying Google Tag Manager to track user interactions and generate insights.",
         "Designed an advertising dashboard on Tableau for the sales team, enabling direct-to-client pitches and removing third-party brokers."
+      ]
+    },
+    {
+      id: "exp3",
+      role: "Data Analyst",
+      company: "University of Illinois at Urbana-Champaign",
+      period: "Jan 2024 – May 2024",
+      description: [
+          "Analyzed 2,000+ healthcare crowdfunding campaigns by developing sentiment models with NLP (Python, NLTK) on unstructured text and image data, uncovering key emotional drivers of donor behavior",
+          "Automated data wrangling with ETL pipelines (Python, Pandas, MongoDB), cutting preprocessing time by 30% and improving data readiness for analysis",
+          "Created actionable visualizations in Tableau and Matplotlib to correlate image sentiment with campaign success and inform strategic recommendations."
       ]
     },
     {
@@ -50,34 +61,28 @@ import {
             {/* Vertical Line */}
             <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
   
-            <Accordion type="single" collapsible className="w-full space-y-8" defaultValue="exp3">
+            <Accordion type="single" collapsible className="w-full space-y-8" defaultValue="exp4">
               {experienceData.map((job, index) => (
                 <div key={job.id} className="relative">
                   <div className="absolute left-4 md:left-1/2 top-4 h-4 w-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2"></div>
                   <div className={cn(
                     "ml-10 md:ml-0",
-                    index % 2 === 0 ? "md:pr-8 md:text-right" : "md:ml-[50%] md:pl-8"
+                    index % 2 === 0 ? "md:pr-8 md:text-right md:w-[calc(50%-1rem)]" : "md:ml-[50%] md:pl-8"
                   )}>
-                    <AccordionItem value={job.id} className={cn(
-                        "border-none",
-                        index % 2 === 0 ? "md:w-[calc(50%-1rem)]" : "md:w-auto"
-                    )}>
+                    <AccordionItem value={job.id} className="border-none">
                       <AccordionTrigger className={cn(
-                        "w-full p-4 rounded-lg bg-card hover:bg-muted/50 transition-colors",
-                        index % 2 === 0 ? "text-right flex-row-reverse" : "text-left"
+                        "w-full p-4 rounded-lg bg-card hover:bg-muted/50 transition-colors text-left",
+                         index % 2 === 0 ? "md:text-right md:flex-row-reverse" : "md:text-left"
                       )}>
                         <div className={cn(
-                            "flex flex-col",
-                            index % 2 === 0 ? "md:text-right items-end" : "md:text-left items-start"
+                            "flex flex-col w-full",
+                            index % 2 === 0 ? "md:items-end" : "md:items-start"
                         )}>
                             <h3 className="font-semibold text-lg">{job.role}</h3>
                             <p className="text-muted-foreground">{job.company} | {job.period}</p>
                         </div>
                       </AccordionTrigger>
-                      <AccordionContent className={cn(
-                          "p-4 mt-2 rounded-lg bg-card/50",
-                           index % 2 === 0 ? "text-left" : "text-left"
-                        )}>
+                      <AccordionContent className="p-4 mt-2 rounded-lg bg-card/50 text-left">
                         <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                           {job.description.map((point, i) => (
                             <li key={i}>{point}</li>
