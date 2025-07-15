@@ -123,7 +123,7 @@ const config = {
             "25%": { transform: "translate(100px, -100px) scale(1.2)" },
             "50%": { transform: "translate(-100px, 100px) scale(0.8)" },
             "75%": { transform: "translate(60px, -60px) scale(1.1)" }
-        }
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
