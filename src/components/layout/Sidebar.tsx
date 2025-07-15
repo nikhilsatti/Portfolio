@@ -7,22 +7,23 @@ export function Sidebar() {
       <div>
         <h1 className="text-2xl font-bold text-foreground">Nikhil Reddy Satti</h1>
         <p className="mt-2 text-muted-foreground">Data Analyst</p>
+        <p className="mt-1 text-sm text-muted-foreground">+1 (217) 954-3567</p>
       </div>
       <nav className="flex flex-col space-y-2">
         <Button variant="ghost" className="justify-start gap-2" asChild>
-          <a href="mailto:nikhil.satti@example.com">
+          <a href="mailto:nikhil.satti05@gmail.com">
             <Mail className="h-4 w-4" />
             Email
           </a>
         </Button>
         <Button variant="ghost" className="justify-start gap-2" asChild>
-          <a href="https://github.com/nikhil-satti" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/nikhilreddysatti" target="_blank" rel="noopener noreferrer">
             <Github className="h-4 w-4" />
             GitHub
           </a>
         </Button>
         <Button variant="ghost" className="justify-start gap-2" asChild>
-          <a href="https://linkedin.com/in/nikhil-reddy-satti" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/nikhilreddysatti" target="_blank" rel="noopener noreferrer">
             <Linkedin className="h-4 w-4" />
             LinkedIn
           </a>

@@ -19,7 +19,7 @@ export function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <div className="mr-4 hidden lg:flex">
           <a href="#landing" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold">Portfolio Pro</span>
+            <span className="font-bold">Nikhil Reddy Satti</span>
           </a>
           <nav className="flex items-center gap-6 text-sm">
             {navLinks.map((link) => (
@@ -61,17 +61,17 @@ export function Header() {
           </div>
           <nav className="hidden lg:flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
-                <a href="mailto:nikhil.satti@example.com" aria-label="Email">
+                <a href="mailto:nikhil.satti05@gmail.com" aria-label="Email">
                     <Mail className="h-4 w-4" />
                 </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-                <a href="https://github.com/nikhil-satti" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/nikhilreddysatti" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="h-4 w-4" />
                 </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-                <a href="https://linkedin.com/in/nikhil-reddy-satti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/nikhilreddysatti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <Linkedin className="h-4 w-4" />
                 </a>
             </Button>

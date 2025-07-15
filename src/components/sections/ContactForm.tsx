@@ -38,21 +38,15 @@ export function ContactForm() {
   async function onSubmit(data: FormValues) {
     setStatus('loading');
     try {
-      const response = await fetch('https://formspree.io/f/mvojozqv', { // Replace with your Formspree endpoint
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+      // Note: This is a mock form submission. 
+      // Replace with a real endpoint or service like Formspree, Resend, etc.
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      console.log('Form submitted:', data);
 
-      if (response.ok) {
-        setStatus('submitted');
-        form.reset();
-        setTimeout(() => setStatus('idle'), 3000);
-      } else {
-        throw new Error('Form submission failed');
-      }
+      setStatus('submitted');
+      form.reset();
+      setTimeout(() => setStatus('idle'), 3000);
+
     } catch (error) {
       toast({
         title: 'Error',

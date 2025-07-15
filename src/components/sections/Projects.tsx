@@ -1,26 +1,29 @@
 import Image from "next/image";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 
 const projectsData = [
     {
-      title: "Customer Segmentation Analysis",
-      githubUrl: "https://github.com/nikhil-satti/project1",
+      title: "Modular Data Pipeline Generator",
+      description: "End-to-End ML Automation Platform with Django, React, and Firebase. Features reusable pipelines for preprocessing and model training.",
+      githubUrl: "https://github.com/nikhilreddysatti",
       imageUrl: "https://placehold.co/600x400.png",
-      aiHint: "data visualization"
+      aiHint: "data pipeline"
     },
     {
-      title: "Sales Forecasting Model",
-      githubUrl: "https://github.com/nikhil-satti/project2",
+      title: "Customer Segmentation & Insights",
+      description: "Improved data quality by 25% and increased marketing efficiency by 30% using K-means clustering and interactive Tableau dashboards.",
+      githubUrl: "https://github.com/nikhilreddysatti",
       imageUrl: "https://placehold.co/600x400.png",
-      aiHint: "dashboard chart"
+      aiHint: "customer dashboard"
     },
     {
-      title: "Real-time Analytics Dashboard",
-      githubUrl: "https://github.com/nikhil-satti/project3",
+      title: "Statistical Modeling for Property Valuation",
+      description: "Cleaned and preprocessed 80K+ housing records and developed predictive models achieving 80%+ accuracy for Cook County home valuations.",
+      githubUrl: "https://github.com/nikhilreddysatti",
       imageUrl: "https://placehold.co/600x400.png",
-      aiHint: "code terminal"
+      aiHint: "real estate"
     }
 ];
 
@@ -35,6 +38,7 @@ export function Projects() {
                             <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex flex-col h-full">
                                 <CardHeader>
                                     <CardTitle className="group-hover:text-primary transition-colors">{project.title}</CardTitle>
+                                    <CardDescription>{project.description}</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-grow">
                                     <Image

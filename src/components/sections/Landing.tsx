@@ -32,7 +32,7 @@ export function Landing() {
             Nikhil Reddy Satti
           </h1>
           <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-            Data analyst who turns messy data into crisp, actionable insights. 4 yrs wrangling SQL, Python & Looker. Loves clean design and great coffee.
+            Data Analyst with expertise in Data Engineering, Big Data Analytics, and Business Intelligence. Passionate about transforming complex data into actionable insights and driving business growth.
           </p>
         </div>
       </div>

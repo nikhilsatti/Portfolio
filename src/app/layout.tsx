@@ -13,8 +13,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Portfolio Pro | Nikhil Reddy Satti',
-  description: 'A portfolio for Nikhil Reddy Satti, a data analyst who turns messy data into crisp, actionable insights.',
+  title: 'Portfolio | Nikhil Reddy Satti',
+  description: 'Portfolio for Nikhil Reddy Satti, a data analyst specializing in data engineering, analytics, and business intelligence.',
 };
 
 export default function RootLayout({

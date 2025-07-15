@@ -8,35 +8,34 @@ import {
   const experienceData = [
     {
       id: "exp3",
-      role: "Senior Data Analyst",
-      company: "Innovate Inc.",
-      period: "2022 - Present",
+      role: "Data Analyst",
+      company: "Holiday World",
+      period: "Jul 2024 - Present",
       description: [
-        "Led a team to develop a predictive model for customer churn, reducing it by 15%.",
-        "Created comprehensive Looker dashboards to track KPIs, improving executive decision-making.",
-        "Automated data extraction and transformation processes using Python and Airflow."
+        "Boosted organic traffic and ad revenue by 35% through Google Analytics, AdTech integration, and SEO (meta-tagging, sitemaps).",
+        "Doubled weekly website signups by deploying Google Tag Manager to track user interactions and generate insights.",
+        "Designed an advertising dashboard on Tableau for the sales team, enabling direct-to-client pitches and removing third-party brokers."
       ]
     },
     {
       id: "exp2",
-      role: "Data Analyst",
-      company: "DataDriven Co.",
-      period: "2021 - 2022",
+      role: "Business Intelligence Analyst",
+      company: "Exelon Corporation",
+      period: "Sep 2023 - May 2024",
       description: [
-        "Analyzed marketing campaign performance, providing insights that increased ROI by 20%.",
-        "Built and maintained SQL queries to support business intelligence reporting.",
-        "Collaborated with product teams to define data collection requirements for new features."
+        "Saved $800K in operational costs by developing real-time supply chain dashboards (Python, Tableau) that identified bottlenecks and flagged cost-saving opportunities across procurement and logistics.",
+        "Analyzed high-volume supply chain data streams to optimize inventory flow, shorten delivery times, and support strategic decision-making for operations leadership."
       ]
     },
     {
       id: "exp1",
-      role: "Junior Analyst",
-      company: "Analytics Solutions",
-      period: "2020 - 2021",
+      role: "Business Technology Analyst",
+      company: "Deloitte",
+      period: "Jul 2021 - Jul 2023",
       description: [
-        "Assisted in cleaning and preparing large datasets for analysis.",
-        "Generated weekly reports on sales trends and presented findings to stakeholders.",
-        "Conducted ad-hoc analysis to answer critical business questions."
+        "Migrated a legacy COBOL health insurance system for HCSC to a microservices-based cloud architecture, boosting scalability to process 1M+ daily claims and reducing operational costs by streamlining QA and CI/CD pipelines.",
+        "Engineered complex business rules on IBM ODM, enabling accurate claim calculations for 20M+ policyholders.",
+        "Resolved 250+ regression bugs and optimized SQL queries, reducing response times by 40% and improving system reliability."
       ]
     }
   ];
@@ -50,7 +49,7 @@ import {
             {/* Vertical Line */}
             <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
   
-            <Accordion type="single" collapsible className="w-full space-y-8">
+            <Accordion type="single" collapsible className="w-full space-y-8" defaultValue="exp3">
               {experienceData.map((job, index) => (
                 <div key={job.id} className="relative">
                   <div className="absolute left-4 md:left-1/2 top-4 h-4 w-4 rounded-full bg-primary -translate-x-1/2 -translate-y-1/2"></div>
