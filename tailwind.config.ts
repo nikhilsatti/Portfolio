@@ -70,25 +70,45 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
-        blob: {
-          "0%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-          "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
-          },
-          "66%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
-          },
-          "100%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
+        "blob-1": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "25%": { transform: "translate(40px, -60px) scale(1.1)" },
+          "50%": { transform: "translate(-30px, 30px) scale(0.9)" },
+          "75%": { transform: "translate(20px, -20px) scale(1.05)" }
         },
+        "blob-2": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(-50px, 20px) scale(1.15)" },
+            "50%": { transform: "translate(40px, -30px) scale(0.95)" },
+            "75%": { transform: "translate(-20px, 50px) scale(1.0)" }
+        },
+        "blob-3": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(60px, 10px) scale(0.85)" },
+            "50%": { transform: "translate(-20px, -50px) scale(1.1)" },
+            "75%": { transform: "translate(30px, 30px) scale(0.9)" }
+        },
+        "blob-4": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(-30px, -40px) scale(1.05)" },
+            "50%": { transform: "translate(50px, 50px) scale(0.95)" },
+            "75%": { transform: "translate(-40px, 20px) scale(1.1)" }
+        },
+        "blob-5": {
+            "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+            "25%": { transform: "translate(20px, 70px) scale(1.2)" },
+            "50%": { transform: "translate(-50px, -10px) scale(0.8)" },
+            "75%": { transform: "translate(10px, -40px) scale(1.0)" }
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        blob: "blob 7s infinite",
+        "blob-1": "blob-1 10s infinite ease-in-out",
+        "blob-2": "blob-2 12s infinite ease-in-out",
+        "blob-3": "blob-3 15s infinite ease-in-out",
+        "blob-4": "blob-4 9s infinite ease-in-out",
+        "blob-5": "blob-5 13s infinite ease-in-out"
       },
     },
   },
