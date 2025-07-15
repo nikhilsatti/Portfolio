@@ -4,16 +4,10 @@ import { BarChartIcon, LineChartIcon, PieChartIcon } from "@/components/ui/icons
 export function Landing() {
   return (
     <section id="landing" className="relative flex items-center min-h-[calc(100vh-10rem)] overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-16 h-16 text-accent animate-orbit">
-          <BarChartIcon className="w-full h-full" />
-        </div>
-        <div className="absolute top-1/2 right-1/4 w-12 h-12 text-accent animate-orbit animation-delay-2000">
-          <LineChartIcon className="w-full h-full" />
-        </div>
-        <div className="absolute bottom-1/4 left-1/3 w-20 h-20 text-accent animate-orbit animation-delay-4000">
-          <PieChartIcon className="w-full h-full" />
-        </div>
+      <div className="absolute inset-0 z-0">
+          <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary rounded-full opacity-20 animate-blob" />
+          <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent rounded-full opacity-20 animate-blob animation-delay-2000" />
+          <div className="absolute top-1/2 left-1/3 w-32 h-32 bg-secondary rounded-full opacity-10 animate-blob animation-delay-4000" />
       </div>
 
       <div className="container z-10 flex flex-col md:flex-row items-center gap-12">
